@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-shadow: 0 0 35px #eee;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.customers tr:hover {
+  background-color: #ddd;
+}
+.img-item {
+  width: 100px;
+  height: 100px;
+}
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+.trash-can {
+  width: 18px;
+  height: 18px;
+}
+
+.trash-can:hover {
+  cursor: pointer;
+}
+/*---------Header------------*/
+@import url("./components/header/header.css");
+
+/*---------Home Page------------*/
+@import url("./components/mainpage/HomePage/HomePage.css");
+
+/*---------Authentication------------*/
+@import url("./components/mainpage/Account/Authentication/Authentication.css");
+
+/*---------Product Detail------------*/
+@import url("./components/mainpage/ProductDetail/ProductDetail.css");
+
+/*---------Order------------*/
+@import url("./components/mainpage/Account/Order/Purchased/purchase.css");
+
+/*---------Product Box UI------------*/
+@import url("./components/mainpage/HomePage/ProductBoxUI/ProductBoxUI.css");
+
+/*---------Cart------------*/
+@import url("./components/mainpage/Cart/Cart.css");
+
+@import url("./components/mainpage/Checkout/Checkout.css");
+
+@import url("./components/mainpage/Admin/HandleProduct/CreateProduct.css");
+@import url("./components/mainpage/Admin/HandleProduct/UserManagement.css");
+
+@import url("./components/mainpage/Account/PasswordChange/changepassword.css");
+
+@import url("./components/footer/Footer.css");

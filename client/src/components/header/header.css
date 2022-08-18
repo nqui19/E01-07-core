@@ -1,0 +1,90 @@
+header {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+}
+
+header a {
+  color: #555;
+}
+header ul li {
+  display: inline-block;
+  opacity: 0.7;
+  padding: 10px 10px;
+}
+header ul li:hover {
+  opacity: 1;
+}
+.menu {
+  display: none;
+}
+.cart-icon {
+  position: relative;
+  margin-right: 20px;
+}
+.cart-icon span {
+  background: crimson;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 7px;
+  font-size: 10px;
+}
+.search-box {
+  overflow: auto;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.search-field {
+  width: 350px;
+  height: 35px;
+  border: 1px solid rgb(136, 135, 135);
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 158px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.usericon {
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  cursor: pointer;
+}
+.usericon .icon{
+  display: inline-block;
+  margin: 20px;
+}
+.usericon:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-button {
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: flex;
+}

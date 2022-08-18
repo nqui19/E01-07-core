@@ -1,0 +1,344 @@
+.checkout-payment{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.cart-payment{
+    width: 65%;
+    padding: 15px 30px 0px 20px;
+}
+
+.user-payment{
+    width: 35%;
+    padding: 15px 30px 15px 0px;
+}
+
+.ship-method-detail{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 15px;
+}
+
+
+
+.ship-method-detail .delivery {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 10px;
+    cursor: pointer;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ship-method-detail .delivery input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ship-method-detail .delivery .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(219, 218, 218);
+    border-radius: 50%;
+}
+
+.ship-method-detail .delivery:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.ship-method-detail .delivery input:checked ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.ship-method-detail .delivery .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.ship-method-detail .delivery  input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.cart-payment .delivery .checkmark:after {
+    top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #2196F3;
+}
+
+
+.payment-method-detail .payment {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 10px;
+    cursor: pointer;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .payment-method-detail .payment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .payment-method-detail .payment .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(219, 218, 218);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .payment-method-detail .payment:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .payment-method-detail .payment input:checked ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .payment-method-detail .payment .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .payment-method-detail .payment input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .payment-method-detail .payment .checkmark:after {
+    top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #2196F3;
+  }
+
+
+
+
+
+.delivery-time-detail .time {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 10px;
+    cursor: pointer;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .delivery-time-detail .time input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .delivery-time-detail .time .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(219, 218, 218);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .delivery-time-detail .time:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .delivery-time-detail .time input:checked ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .delivery-time-detail .time .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .delivery-time-detail .time input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .delivery-time-detail .time .checkmark:after {
+    top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #2196F3;
+  }
+
+
+
+
+
+
+.payment-method-detail{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 15px;
+}
+
+.delivery-time-detail{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 15px;
+}
+
+.user-payment-detail{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 15px 15px 15px 0px;
+}
+
+.user-payment-detail p{
+    margin: 15px ;
+    font-weight: bold;
+}
+
+.payment-cart-summary{
+  margin-left: -7px;
+}
+
+.payment-cart-summary .item-detail{
+    
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  flex: right;
+  margin-bottom: 10px;
+    
+    
+}
+
+.payment-cart-summary .item-detail .number{
+    font-weight: 400;
+    width: 25px;
+    margin: 0px 0px 15px 0px;
+}
+
+.payment-cart-summary .item-detail .name{
+    font-weight: 400;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.payment-cart-summary .item-detail .price{
+    margin-right: -7px;
+}
+
+.cart-detail-dropdown{
+    margin: 15px;
+    color: rgb(0, 0, 221);
+}
+
+.user-payment-detail hr{
+    width: 380px;
+}
+
+.user-payment-detail .total-cash{
+    margin: 15px -7px 15px 0px;
+    
+    
+}
+.user-payment-detail .total-cash .temp-cash{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex: right;
+    margin-bottom: 10px;
+}
+
+.user-payment-detail .total-cash .vat{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex: right;
+    margin-bottom: 10px;
+}
+
+.user-payment-detail .total-cash .ship-fee{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex: right;
+    margin-bottom: 10px;
+}
+
+.user-payment-detail .total-cash .total-payment{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex: right;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.cart-payment .order{
+    background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 25%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart-payment .submit-order{
+  display: flex;
+  justify-content: space-between;
+}

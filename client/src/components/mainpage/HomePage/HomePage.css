@@ -1,0 +1,67 @@
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .select {
+    position: relative;
+    display: flex;
+    width: 12em;
+    height: 1.5em;
+    line-height: 3;
+    background: #9a9c9c;
+    overflow: hidden;
+    border-radius: 0.25em;
+  }
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.25s all ease;
+    font-size: 10px;
+  }
+  .select:hover::after {
+    color: teal;
+  }
+
+  .title-home {
+    background-color: crimson;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align:center;
+  }
+
+  .btn-more {
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }

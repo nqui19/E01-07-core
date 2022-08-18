@@ -1,0 +1,67 @@
+.detail1 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    font-size: 150%;
+    
+}
+
+.detail2 {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.price {
+    background-color: #eee;;
+    height: 55px;
+    color:  #ee4d2d;
+    margin-top: 20px;
+}
+
+.infordetail {
+    max-width: 500px;
+    width: 100%;
+    margin: 5px 20px; 
+    
+}
+
+.detail3 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.btn{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn a {
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 6px;
+  }
+
+#btn-buy1 {
+    background: #ee4d2d;
+}
+
+.infordetail h3{
+    text-transform: capitalize;
+}
