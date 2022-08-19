@@ -22,6 +22,7 @@ import Checkout from './Checkout/Checkout'
 
 //Order
 import Purchased from './Account/Order/Purchased/Purchased'
+import HistoryID from './Account/Order/Purchased/historyID'
 import Pending from './Account/Order/Pending/Pending'
 
 //Admin
@@ -60,6 +61,7 @@ export default function Path() {
             <Route path='/checkout' exact component={isLogged ? Checkout : NotFound}/>
 
             <Route path='/account/order/history' exact component={isLogged ? Purchased : NotFound}/>
+            <Route path='/account/order/history/:id' exact component={isLogged ? HistoryID : NotFound}/>
             <Route path='/account/order/pending' exact component={isLogged ? Pending : NotFound}/>
 
             <Route path='/admin/modify-product' exact component={isAdmin ? CreateProduct : NotFound}/>

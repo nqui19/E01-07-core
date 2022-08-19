@@ -86,7 +86,7 @@ export default function Header() {
               <li>{!isAdmin ? <Link to="/account">Your account</Link> : ""}</li>
               <li>
                 {!isAdmin ? (
-                  <Link to="/account/history">History Order</Link>
+                  <Link to="/account/order/history">History Order</Link>
                 ) : (
                   ""
                 )}

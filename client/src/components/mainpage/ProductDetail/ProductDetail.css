@@ -19,10 +19,10 @@
 }
 
 .price {
-    background-color: #eee;;
     height: 55px;
-    color:  #ee4d2d;
     margin-top: 20px;
+    font-weight: bold;
+    color: #ee4d2d;
 }
 
 .infordetail {
