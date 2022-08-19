@@ -26,20 +26,12 @@ export default function Cart() {
         <div className="cart">
             <div className="cart-mng">
                 <div className="s">
-                    <h1>Giỏ hàng</h1>
-                    <h3>Xóa tất cả</h3>
+                    <h1>Giỏ hàng của bạn</h1>
+                    <h1>Xóa tất cả</h1>
                 </div>
             </div>
             <div className="checkout">
                 <div className="infor-price">
-                    <div className="shop">
-                        <div className="name">
-                            RookieSE
-                        </div>
-                        <div className="total-price">
-                            {priceWithCommas(total)}đ
-                        </div>
-                    </div>
                     <div className="product">
                     {cart.map((product) => {
             return (
@@ -49,11 +41,14 @@ export default function Cart() {
                     <img src={product.images.url} alt="" className='img-item'/>
                 </div>
                 <div>
-                    <div>
+                    <h3>
                         {product.title.toUpperCase()}
-                    </div>
+                    </h3>
                     <div>
                         Loại: {product.category}
+                    </div>
+                    <div>
+                        Giá :
                     </div>
                 </div>
                 
@@ -63,14 +58,22 @@ export default function Cart() {
           })}
                     </div>
                 </div>
-                <div className="proceed-checkout">
-                    Proceed and Checkout
-                </div>
+                
             </div>
+        
         </div>
+        <div className="shop">
+            <h1 className="name">
+                Tổng tiền tạm tính :
+            </h1>
+            <h1 className="total-price">
+                {priceWithCommas(total)}đ
+            </h1>
+                    
         <Link to="/checkout">
-          <input type="submit" value="Continue to checkout" class="checkout-button" />
+          <input type="submit" value="Tiến hành đặt hàng" class="checkout-button" />
         </Link>
+        </div>
         </>
     )
 }
