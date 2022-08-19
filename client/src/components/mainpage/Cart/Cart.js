@@ -48,7 +48,7 @@ export default function Cart() {
                         Loại: {product.category}
                     </div>
                     <div>
-                        Giá :
+                        Giá : {product.price}
                     </div>
                 </div>
                 
