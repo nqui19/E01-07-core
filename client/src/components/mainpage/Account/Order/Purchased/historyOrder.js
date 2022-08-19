@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { GlobalState } from "../../../../../GlobalState";
+import { GlobalState } from "../../../GlobalState";
 import { useParams, Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import trash_can from "./iconmonstr-trash-can-1.svg";
@@ -12,11 +12,7 @@ function Cart() {
   const [total, setTotal] = useState(0);
   const [order, setOrder] = state.userAPI.orders;
   const [infor, setInfor] = state.userAPI.infor;
-  const priceWithCommas = (price) => {
-    var parts = price.toString().split(".");
-    parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
-    return parts.join(",");
-  }
+
   useEffect(() => {
 
     const filterOrder = () => {
@@ -25,7 +21,6 @@ function Cart() {
           order.splice(index, 1)
         }
       })
-      console.log(order)
       setOrder([...order])
     }
     filterOrder()
@@ -67,13 +62,13 @@ function Cart() {
             return (
               <tr>
                 <td>
-                  <Link to={"/account/order/history/" + cart._id}>{cart._id}</Link>
+                  <Link to={"/account/history/" + cart._id}>{cart._id}</Link>
                 </td>
                 <td>{dateHandle(cart.createdAt)}</td>
                 <td>{cart.payment}</td>
                 <td>{cart.delivery_time}</td>
-                <td>{priceWithCommas(cart.ship_fee)} đ</td>
-                <td>{priceWithCommas(cart.total)} đ</td>
+                <td>{cart.ship_fee}</td>
+                <td>{cart.total}</td>
               </tr>
             );
           })}

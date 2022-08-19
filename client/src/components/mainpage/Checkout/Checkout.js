@@ -238,6 +238,7 @@ export default function Checkout() {
               return (
                 <div className="item-detail">
                   <div className="number">{item.quantity}x</div>
+                  <img src={item.images.url} alt="" className='img-item'/>
                   <div className="name">{item.title}</div>
                   <div className="price">{priceWithCommas(item.price)}đ</div>
                 </div>
