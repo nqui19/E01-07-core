@@ -69,12 +69,23 @@
     color: #ee4d2d;
     
 }
-input .checkout-button{
-    background-color: aqua;
-    background: #ee4d2d;
-    text-transform: capitalize;
-    color: white;
-    height: 100%;
+.checkout-button{
+    display:inline-block;
+    border:1px solid #ee4d2d;
+    background-color:#ee4d2d;
+    padding:15px 20px;
+    box-shadow:2px 2px 5px #6c6969;
+    text-decoration:none;
+    border-radius:3px;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    left: 87%;
+}
+
+.checkout-button:hover{
+    border:1px solid #b11e10;
+    background-color:#b11e10;
 }
 
 #check-button {

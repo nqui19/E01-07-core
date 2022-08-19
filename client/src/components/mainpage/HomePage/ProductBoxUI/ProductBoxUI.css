@@ -52,11 +52,18 @@
     background: #555;
     margin-right: 5px;
   }
+
+  #btn-buy:hover{
+    background-color: #1b1b1b;
+  }
+
   #btn-view {
     background: teal;
     margin-left: 5px;
   }
-  
+  #btn-view:hover {
+    background: rgb(1, 102, 102);
+  }
   .sidebar {
     position: fixed;
     width: 240px;

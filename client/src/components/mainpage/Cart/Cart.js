@@ -68,12 +68,13 @@ export default function Cart() {
             </h1>
             <h1 className="total-price">
                 {priceWithCommas(total)}đ
-            </h1>
-                    
-        <Link to="/checkout">
-          <input type="submit" value="Tiến hành đặt hàng" class="checkout-button" />
-        </Link>
+            </h1>              
         </div>
+        <div>
+        <Link to="/checkout">
+                <input type="submit" value="Tiến hành đặt hàng" class="checkout-button" />
+        </Link>   
+        </div> 
         </>
     )
 }
