@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import React, { useContext, useState, useEffect } from "react";
 import {GlobalState} from '../../../GlobalState'
+import bin1 from '../Cart/iconcart/🦆 icon _trash bin_.png';
 export default function Cart() {
     const state = useContext(GlobalState);
     const [cart, setCart] = state.userAPI.cart;
@@ -49,6 +50,9 @@ export default function Cart() {
                     </div>
                     <div>
                         Giá : {product.price}
+                    </div>
+                    <div className="delete" >
+                        <img src ={bin1}/>
                     </div>
                 </div>
                 

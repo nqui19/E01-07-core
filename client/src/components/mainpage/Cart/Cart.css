@@ -26,7 +26,16 @@
     width: 100%;
     
 }
-
+.cart .checkout .infor-price .product .delete
+{
+    
+    width: 30px;
+    margin-left: 1000px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
