@@ -9,6 +9,7 @@ import Order from "./order.svg"
 import Notif from "./notif.svg"
 import Login from "./login.svg"
 import Discount from "./discount.svg"
+import Logo from '../header/logo.png'
 import { Link } from "react-router-dom";
 import axios from "axios";
 export default function Header() {
@@ -165,7 +166,7 @@ export default function Header() {
         <h1>
           
           <Link to="/">
-            {isAdmin ? "Admin" : "rookieSE"}
+            {isAdmin ? "Admin" : <img className="logo-home" src ={Logo}/>}
           </Link>
         </h1>
       </div>

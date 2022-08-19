@@ -88,3 +88,10 @@ input {
 .logo {
   display: flex;
 }
+
+.logo-home{
+  height: 100px;
+  width: 200px;
+  position: relative;
+  left: 50px;
+}
