@@ -10,7 +10,7 @@ import Login from './Account/Authentication/Login'
 import Register from './Account/Authentication/Register'
 
 //User Information
-import User from './Account/User'
+import PersonalInformation from './Account/Information/PersonalInformation';
 
 //Password Change
 import ForgotPass from './Account/PasswordChange/Forgot'
@@ -51,8 +51,6 @@ export default function Path() {
             <Route path='/account/login' exact component={isLogged ? NotFound : Login}/>
             <Route path='/account/register' exact component={isLogged ? NotFound : Register}/>
 
-            <Route path='/account' exact component={User}/>
-
             <Route path='/account/forgot-password' exact component={isLogged ? NotFound : ForgotPass}/> //Cannot Login
             <Route path='/account/change-password' exact component={isLogged ? ChangePass : NotFound}/> //Can Login
 
@@ -63,6 +61,7 @@ export default function Path() {
             <Route path='/account/order/history' exact component={isLogged ? Purchased : NotFound}/>
             <Route path='/account/order/history/:id' exact component={isLogged ? HistoryID : NotFound}/>
             <Route path='/account/order/pending' exact component={isLogged ? Pending : NotFound}/>
+            <Route path='/account/information' exact component={isLogged ? PersonalInformation : NotFound}/>
 
             <Route path='/admin/modify-product' exact component={isAdmin ? CreateProduct : NotFound}/>
 
@@ -73,6 +72,8 @@ export default function Path() {
             <Route path='/user-management' exact component={isAdmin ? UserManagement : NotFound}/>
             <Route path='/product-management' exact component={isAdmin ? ProductManagement : NotFound}/>
             <Route path='/edit/:id' exact component={isAdmin ? CreateProduct : NotFound}/>
+
+
 
             <Route path='/terms-of-use' exact component={TermOfUse}/>
             <Route path='/warranty-policy' exact component={Warranty}/>

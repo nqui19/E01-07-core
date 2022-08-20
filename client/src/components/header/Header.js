@@ -47,7 +47,7 @@ export default function Header() {
         <div className="usericon">
           {isAdmin ? "" :
             <div className="icon">
-            <img src={Order} alt="" width="35" />
+            <Link to="/account/order/history"><img src={Order} alt="" width="35" /></Link>
           </div>
           }
         </div>
@@ -84,13 +84,9 @@ export default function Header() {
                     : userControl()}
                 </Link>
               </li>
-              <li>{!isAdmin ? <Link to="/account">Your account</Link> : ""}</li>
+              <li>{!isAdmin ? <Link to="/account/information">Your account</Link> : ""}</li>
               <li>
-                {!isAdmin ? (
-                  <Link to="/account/order/history">History Order</Link>
-                ) : (
-                  ""
-                )}
+                
               </li>
               <li>
                 <Link to="/" onClick={logOut}>
@@ -148,7 +144,7 @@ export default function Header() {
           <Link to="/user-management">User Management</Link>
         </li>
         <li>
-          <Link to="/admin/modify-product">Product Management</Link>
+          <Link to="/product-management">Product Management</Link>
         </li>
       </>
     );

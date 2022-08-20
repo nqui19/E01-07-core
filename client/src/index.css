@@ -102,4 +102,6 @@ button {
 
 @import url("./components/mainpage/Account/PasswordChange/changepassword.css");
 
+@import url("./components/mainpage/Account/Information/PersonalInformation.css");
+
 @import url("./components/footer/Footer.css");
