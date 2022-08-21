@@ -39,7 +39,7 @@ export default function HistoryID() {
                 <td>
                   <img src={product.images.url} alt="" className='img-item'/>
                 </td>
-                <td>{product.title}</td>
+                <td style={{textTransform:"capitalize"}}>{product.title}</td>
                 <td>{priceWithCommas(product.price)}</td>
                 <td>{product.quantity}</td>
                 <td style={{fontWeight:"bold"}}>{priceWithCommas(product.quantity*product.price)}</td>
@@ -48,7 +48,7 @@ export default function HistoryID() {
             );
           })}
       </table>
-      <p className='total-price'>Total price: {priceWithCommas(total)} đ</p>
+      <p className='total-price-order'>Total price: {priceWithCommas(total)} đ</p>
         </div>
     )
 }

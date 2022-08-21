@@ -40,10 +40,10 @@ export default function PersonalInformation() {
           <Link to="/cart">Your Cart</Link>
         </button>
         <button type="submit" className="info-btn">
-          <Link to="/account/history">Order History</Link>
+          <Link to="/account/order/history">Order History</Link>
         </button>
         <button type="submit" className="info-btn">
-          <Link to="/change-password">Change Password</Link>
+          <Link to="/account/change-password">Change Password</Link>
         </button>
       </div>
       <div className="per-info">
