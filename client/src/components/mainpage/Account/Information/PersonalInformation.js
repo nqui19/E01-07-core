@@ -34,7 +34,7 @@ export default function PersonalInformation() {
     <div className="account">
       <div className="dropdown">
         <button type="submit" className="info-btn">
-          <Link to="/account">Personal Information</Link>
+          <Link to="/account/information">Personal Information</Link>
         </button>
         <button type="submit" className="info-btn">
           <Link to="/cart">Your Cart</Link>
