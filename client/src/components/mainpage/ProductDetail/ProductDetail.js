@@ -62,7 +62,7 @@ export default function ProductDetail() {
                     <div className='infordetail'>
                         <h3>{ProductDetail.title}</h3>
                         <div className='price'>
-                            <h1>Giá: {priceWithCommas(ProductDetail.price)} đ</h1>
+                            <h2>Giá: {priceWithCommas(ProductDetail.price)} đ</h2>
                         </div>
                         <div className='detail3'>
                             <h5>Thương hiệu: {ProductDetail.brand}</h5>

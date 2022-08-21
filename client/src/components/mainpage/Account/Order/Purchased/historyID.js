@@ -31,7 +31,7 @@ export default function HistoryID() {
             <th>Name</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th id="total">Total</th>
+            <th id="total">Total(đ)</th>
           </tr>
           {history.map((product) => {
             return (
@@ -40,9 +40,9 @@ export default function HistoryID() {
                   <img src={product.images.url} alt="" className='img-item'/>
                 </td>
                 <td>{product.title}</td>
-                <td>{product.price}</td>
+                <td>{priceWithCommas(product.price)}</td>
                 <td>{product.quantity}</td>
-                <td>${product.quantity*product.price}</td>
+                <td style={{fontWeight:"bold"}}>{priceWithCommas(product.quantity*product.price)}</td>
                 
               </tr>
             );
