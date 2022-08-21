@@ -1,1 +1,9 @@
-
+.total-price {
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    color: #ee4d2d;
+}

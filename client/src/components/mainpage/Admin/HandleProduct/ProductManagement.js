@@ -18,6 +18,11 @@ export default function ProductManagment() {
         return "RookieSE"
       }else return infor.name
     }
+    const priceWithCommas = (price) => {
+      var parts = price.toString().split(".");
+      parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+      return parts.join(",");
+  }
     const name = getName()
     console.log(name)
     const removeAccent = (str) => {
@@ -104,7 +109,7 @@ export default function ProductManagment() {
             <th>Name</th>
             <th>Category</th>
             <th>Brand</th>
-            <th>Price($)</th>
+            <th>Price(đ)</th>
             <th><img src={edit_icon} alt="" className='trash-can'/></th>
             <th onClick={() => removeAllProduct()}><img src={trash_can} alt="" className='trash-can'/></th>
           </tr>
@@ -122,9 +127,9 @@ export default function ProductManagment() {
                     {product.title}
                   </Link>
                 </td>
-                <td>{product.category}</td>
+                <td style={{textTransform:"uppercase"}}>{product.category}</td>
                 <td>{product.brand}</td>
-                <td>{product.price}</td>
+                <td>{priceWithCommas(product.price)}</td>
                 <td className='remove-pro'>
                   <Link to={'/edit/'+product._id}>
                     <img src={edit_icon} alt="" className='trash-can'/>
