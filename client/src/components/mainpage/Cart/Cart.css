@@ -104,8 +104,10 @@
 
 .detail .trash-can{
     position:relative;
-    left: 1300px;
-    
+    left: 900px;
+    bottom: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 input,

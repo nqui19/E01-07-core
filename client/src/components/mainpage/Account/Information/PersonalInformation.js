@@ -34,16 +34,16 @@ export default function PersonalInformation() {
     <div className="account">
       <div className="dropdown">
         <button type="submit" className="info-btn">
-          <Link to="/account">Personal Information</Link>
+          <Link to="/account/information">Personal Information</Link>
         </button>
         <button type="submit" className="info-btn">
           <Link to="/cart">Your Cart</Link>
         </button>
         <button type="submit" className="info-btn">
-          <Link to="/account/history">Order History</Link>
+          <Link to="/account/order/history">Order History</Link>
         </button>
         <button type="submit" className="info-btn">
-          <Link to="/change-password">Change Password</Link>
+          <Link to="/account/change-password">Change Password</Link>
         </button>
       </div>
       <div className="per-info">

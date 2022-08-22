@@ -103,11 +103,11 @@ export default function Cart() {
                     <h3>
                         {product.title.toUpperCase()}
                     </h3>
-                    <div>
+                    <div style={{textTransform:"capitalize"}}>
                         Loại: {product.category}
                     </div>
-                    <div>
-                        Giá : {product.price}
+                    <div style={{color:"#ee4d2d", fontWeight:"bold"}}>
+                        Giá : {priceWithCommas(product.price)}đ
                     </div>
                 <td>
                   <div class="input-group">
